@@ -17,7 +17,25 @@
         <strong id="passErro" style="display: none;">digite uma senha</strong>
         <p><button class="btn btn-primary" onclick="validateField()">Validar</button>
         <p><strong id="success" style="display: none; color: green;"> Voce esta logado </strong>
-        
+        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Esqueceu a senha</a>
     </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Recuperar Senha</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>Digite seu email para recuperar a senha</h4>
+                <input type="text" class="form-control" aria-label="email" aria-describedby="basic-addon1" id="name" placeholder="Digite o email" >
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
