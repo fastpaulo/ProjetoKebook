@@ -11,11 +11,28 @@
     <div class="container text-center">
         <img id="img" src="img/pinguim.png">
             <h2 id="title"> Digite seu Usuario e senha </h2>
-        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" id="name" placeholder="Digite o Usuario" >
-        <strong id="userErro" style="display: none;">digite o nome de usuario</strong>
-        <input id="password" placeholder="Digite uma senha" type="password" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-        <strong id="passErro" style="display: none;">digite uma senha</strong>
-        <p><button class="btn btn-primary" onclick="validateField()">Validar</button>
+           <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control " aria-label="Username" aria-describedby="basic-addon1" id="name"
+                    placeholder="Digite o Usuario">
+                <strong id="userErro" style="display: none;">digite o nome de usuario</strong>
+            </div>
+            <div class="col-sm-4"></div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <input id="password" placeholder="Digite uma senha" type="password" class="form-control"
+                    aria-label="Username" aria-describedby="basic-addon1">
+                <strong id="passErro" style="display: none;">digite uma senha</strong>
+            </div>
+            <div class="col-sm-4"></div>
+
+        </div>
+        <p><button class="btn btn-primary" onclick="validateField()">Entrar</button>
         <p><strong id="success" style="display: none; color: green;"> Voce esta logado </strong>
         <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Esqueceu a senha</a>
     </div>
